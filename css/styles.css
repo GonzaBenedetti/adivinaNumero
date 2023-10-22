@@ -1,0 +1,38 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    text-align: center;
+    background-color: #F6F6F6;
+}
+h1 {
+    padding: 15px;
+    
+}
+input {
+    width: 40%;
+    height: 30px;
+    border-radius: 5px;
+    outline: none;
+}
+button {
+    height: 30px;
+    border: solid 1px #000000;
+    border-radius: 5px;
+    background-color: #000000;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 5px;
+
+    transition: .3s all;
+}
+button:hover {
+    background-color: #F6F6F6;
+    color: #000000;
+    cursor: pointer;
+}
+p {
+    padding: 15px;
+}
