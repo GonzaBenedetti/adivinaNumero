@@ -4,6 +4,11 @@ let mensaje = document.getElementById(`mensaje`);
 let prueba = document.getElementById(`prueba`);
 let pruebas = 0;
 
+addEventListener("keydown", (e) => {
+    if (e.key === `Enter`) {
+        chequearNumero();
+    }
+})
 
 function chequearNumero () {
     pruebas ++;
@@ -11,7 +16,7 @@ function chequearNumero () {
     let numeroEntrada = parseInt(numeroIngresado.value);
 
     if (numeroEntrada < 1 || numeroEntrada > 100 || isNaN(numeroEntrada)) {
-        mensaje.textContent = `El dato ingresado "${numeroEntrada}" no es valido. Vuelva a ingresar un numero entre el 1 y el 100.`
+        mensaje.textContent = `El dato ingresado no es valido. Vuelva a ingresar un numero entre el 1 y el 100.`
         document.getElementById(`numeroIngresado`).value = ``;
         mensaje.style.color = `red`;
         return
@@ -34,6 +39,7 @@ function chequearNumero () {
         mensaje.style.color = `red`;
     }
 }
+
 function resetNumero(){
     pruebas = 0;
     prueba.textContent = pruebas;
