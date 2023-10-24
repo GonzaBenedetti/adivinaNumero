@@ -8,24 +8,34 @@ body {
     background-color: #F6F6F6;
 }
 h1 {
-    padding: 15px;
-    
+    padding: 5px;    
+}
+.textoSub {
+    margin-bottom: 5px;
+    padding: 5px;
 }
 input {
     width: 40%;
     height: 30px;
-    padding: 3px;
+    padding: 5px;
     border-radius: 5px;
     outline: none;
 }
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+    }
+input[type=number] { -moz-appearance:textfield; }
 button {
     height: 30px;
-    border: solid 1px #000000;
+    border: solid 2px #000000;
     border-radius: 5px;
     background-color: #000000;
     color: #FFFFFF;
+    letter-spacing: .5px;
     font-weight: bold;
-    padding: 5px;
+    padding: 5px 10px;
 
     transition: .3s all;
 }
@@ -34,6 +44,10 @@ button:hover {
     color: #000000;
     cursor: pointer;
 }
-p {
-    padding: 15px;
+.textoJugar {
+    padding: 10px;
+}
+h4 {
+    margin-top: 3px;
+    margin-bottom: 10px;
 }
